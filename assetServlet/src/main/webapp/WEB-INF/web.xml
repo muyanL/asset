@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+	<!--角色 -->
+	<servlet>
+		<servlet-name>/system/role</servlet-name>
+		<servlet-class>com.ossjk.asset.system.servlet.RoleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>/system/role</servlet-name>
+		<url-pattern>/system/role.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- 用户 -->
+	<servlet>
+		<servlet-name>/system/user</servlet-name>
+		<servlet-class>com.ossjk.asset.system.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>/system/user</servlet-name>
+		<url-pattern>/system/user.do</url-pattern>
+	</servlet-mapping>
+	<!-- 主页 -->
+	<servlet>
+		<servlet-name>/system/index</servlet-name>
+		<servlet-class>com.ossjk.asset.system.servlet.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>/system/index</servlet-name>
+		<url-pattern>/system/index.do</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/page/login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
